@@ -12,7 +12,7 @@ public class App {
         contact.setFriendsFromArray(contacts1);
         contacts1[0].setFirstName("Mato");
         contact.setFriends(contact2, contact3, contact4);
-
+        contact.getFriends()[0].setFirstName("Gabi");
 
     }
 }

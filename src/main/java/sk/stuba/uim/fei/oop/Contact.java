@@ -37,10 +37,23 @@ public class Contact {
         return new Contact(fullName);
     }
 
+    public Contact(Contact other) {
+        this.firstName = other.firstName;
+        this.surname = other.surname;
+    }
+
     public void setFriends(Contact... newFriend){
         this.friends = newFriend;
     }
     public void setFriendsFromArray(Contact[] newFriend){
         this.friends = newFriend;
+    }
+
+    public Contact[] getFriends(){
+        var friendsClone = new Contact[this.friends.length];
+        for(int i=0;i<this.friends.length;i++){
+            friendsClone[i] = new Contact(this.friends[i]);
+        }
+        return friendsClone;
     }
 }
