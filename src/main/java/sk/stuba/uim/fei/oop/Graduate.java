@@ -22,6 +22,7 @@ public class Graduate extends Contact{
     public Graduate(String firstName, String surname, String academicTitle) {
         super(firstName, surname);
         this.academicTitle=academicTitle;
+        this.friends= new Contact[0];
 
     }
 
