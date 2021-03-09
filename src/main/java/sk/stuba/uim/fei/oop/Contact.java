@@ -2,7 +2,7 @@ package sk.stuba.uim.fei.oop;
 
 import java.util.Arrays;
 
-public abstract class Contact {
+public abstract class Contact implements  Znamy{
 
     String firstName;
     String surname;
